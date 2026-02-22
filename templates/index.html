@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flask To Do List</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>To-Do List</h2>
+
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Enter your task..." />
+        <button class="add-btn" onclick="addTask()">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
